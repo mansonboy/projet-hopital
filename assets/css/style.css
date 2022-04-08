@@ -1,1 +1,60 @@
-#style css
+h1
+{
+    display: inline;
+    
+}
+div
+{
+    float : left;
+}
+body
+{
+    margin : 0px;
+    
+}
+.dashboard
+{
+    width : 20%;
+	min-height: 100vh;
+    background-color: #403b3b ;
+    
+}
+.barre
+{
+    
+    width : 80%;
+    min-height: 8vh;
+    background-color: #519df6;
+    
+}
+.logo
+{
+    width: 50px;
+    height : 50px;
+    margin-left : 10px;
+    margin-top: 2px ;
+}
+#hopital_manu
+{
+    position: relative;
+    bottom : 10px;
+    left : 3px;
+}
+#redim
+{
+    font-size : 4px;
+}
+.recherche
+{
+  position : relative;
+  left : 600px;
+  bottom : 15px;
+}
+.logo_recherche
+{
+    width: 25px;
+    height: 25px;
+    position : relative;
+    left : 580px;
+    bottom : 10px;
+}
