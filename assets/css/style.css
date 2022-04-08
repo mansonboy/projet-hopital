@@ -1,65 +1,114 @@
-h1
-{
-    display: inline; 
+* {
+    margin: 0px;
 }
-div
-{
-    float : left;
+
+.container {
+    width: auto;
+    height: 100vh;
 }
-body
-{
-    margin : 0px;
-    
+
+/* -------  header --------------- */
+
+h1 {
+    padding-top: 15px;
+    padding-left: 1%;
+    font-size: 1.5em;
 }
-.dashboard
-{
-    width : 20%;
-	min-height: 100vh;
-    background-color: #403b3b ;
-    
+
+.barreContainer {
+    float: right;
+    width: 80%;
 }
-.barre
-{
-    
-    width : 80%;
-    min-height: 8vh;
+
+.barre {
     background-color: #519df6;
-    
+    display: flex;
 }
-.logo
-{
-    width: 50px;
-    height : 50px;
-    margin-left : 10px;
-    margin-top: 2px ;
+
+.logo {
+    width: 4%;
+    height: 50px;
+    padding-left: 10px;
 }
-#hopital_manu
-{
-    position: relative;
-    bottom : 10px;
-    left : 3px;
-}
-#redim
-{
-    font-size : 4px;
-}
-.recherche
-{
-    position : relative;
-    left : 54%;                
-    bottom : 15px;
-}
-.logo_recherche
-{
-    width: 25px;
+
+.logo_recherche {
+    width: 3%;
     height: 25px;
-    position : relative;    
-    left : 52%;
-    bottom : 10px;
 }
-.png_profil
-{
-    
-    width : 100px;
+
+.recherche {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 50%;
+}
+
+.logo_recherche {
+    position: relative;
+    right: 3%;
+    top: 8px;
+}
+
+.logo_recherche, .recherche {
+    float: right;
+}
+
+/* --------------------- Tableau de bord --------------------------- */
+
+.dashboard {
+    background-color: #403b3b;
+    float: left;
+    width: 20%;
+    height: 100vh;
+}
+
+.png_profil {
+    width: 100px;
     height: 100px;
+}
+
+.menu {
+   list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .menu ul {
+    
+    font-size: 1.5;
+  }
+
+  .menu li {
+  color: #fff ;
+  margin-bottom: 20px ;
+  margin-top: 20px;
+  text-align: center ;
+  }
+  
+.menu li a {
+    color: #fff ;
+    text-decoration: none ;
+    font-size: 1.2em;
+  }
+
+  .borderList {
+     border-bottom: 1px solid white; 
+     width: 80%;
+     margin-left: 8%;
+  }
+
+  #name {
+      color: white;
+      position: relative;
+      bottom: 40px;
+  }
+
+  .Déconnexion{
+    position: relative;
+    left: 38%;
+    bottom: 40px;
+    text-decoration: underline;
+    color: white;
+    font-size: 0.8em;
 }
