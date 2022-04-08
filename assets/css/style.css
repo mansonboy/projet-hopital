@@ -45,16 +45,16 @@ body
 }
 .recherche
 {
-  position : relative;
-  left : 600px;                
-  bottom : 15px;
+    position : relative;
+    left : 54%;                
+    bottom : 15px;
 }
 .logo_recherche
 {
     width: 25px;
     height: 25px;
     position : relative;    
-    left : 580px;
+    left : 52%;
     bottom : 10px;
 }
 .png_profil
