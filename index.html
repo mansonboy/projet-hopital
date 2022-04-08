@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Connexion</title>
+    <link rel="stylesheet" href="assets/css/connexion.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="logoConnexion">
+                <img src="assets/img/logo.png" alt="Logo">
+            </div>
+            <div class="titleConnexion">
+                <h1>Hopital La Manu</h1>
+            </div>
+
+        </header>
+
+        <div class="connexionContainer">
+            <div class="connexionBox">
+                <form class="connexionForm" action="accueil.html" method="post">
+                    <legend>Connexion</legend>
+
+                    <ul>
+                        <li>
+                            <label for="connexion"></label>
+                            <input type="text" name="connexion" required placeholder="Connexion">
+                        </li>
+                        <li>
+                            <label for="password"></label>
+                            <input type="password" name="password" required placeholder="Mot de passe">
+                        </li>
+                    </ul>
+                    <p><a href="index.html">Mot de passe oublié</a></p>
+                    <input class="btn" type="submit" value="Valider">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>

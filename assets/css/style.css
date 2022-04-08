@@ -1,7 +1,6 @@
 h1
 {
-    display: inline;
-    
+    display: inline; 
 }
 div
 {
@@ -47,14 +46,20 @@ body
 .recherche
 {
   position : relative;
-  left : 600px;
+  left : 600px;                
   bottom : 15px;
 }
 .logo_recherche
 {
     width: 25px;
     height: 25px;
-    position : relative;
+    position : relative;    
     left : 580px;
     bottom : 10px;
+}
+.png_profil
+{
+    
+    width : 100px;
+    height: 100px;
 }
