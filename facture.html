@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr ">
+
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Hopital La manu</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-------------------- Header ---------------------->
+        <header>
+            <div class="barreContainer">
+                <div class="barre">
+                    <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital" class="logo">
+                    <h1>Hopital La Manu</h1>
+
+                    <label for="recherche"></label>
+                    <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
+
+                    <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
+                </div>
+            </div>
+
+        </header>
+
+        <!-------------------- Tableau de bord ------------------>
+        <nav>
+            <div class="dashboard">
+                <p><img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
+                    <span id="name">Jean
+                        Dupont</span>
+                </p>
+                <p><a class="Déconnexion" href="index.html">Déconnexion</a></p>
+
+                <ul class="menu">
+                    <div class="borderList">
+                        <li><a href="index.html">Tableau de bord</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Prise de rendez vous</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Factures</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Entrée patients</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Patients</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Médecins</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Urgences</a></li>
+                    </div>
+
+                </ul>
+
+                <div class="emergency">
+                    <p>Urgences</p>
+                    <p>20min</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!---------------------- Body ----------------------------->
+        <section class="accueil">
+            <form id="entryForm" action="traitement.php" method="post">
+                    <ul class="entryFormList">
+                    <li class="formList">
+                        <label for="lastName">Nom</label>
+                        <input id="lastName" class="inputEntry" type="text" name="lastName" required placeholder="Nom">
+                    </li>
+
+                    <li>
+                        <label for="firstName">Prénom</label>
+                        <input id="firstName" class="inputEntry" type="text" name="firstName" required
+                            placeholder="Prénom">
+                    </li>
+
+                    <li>
+                        <label for="birthday">Date de naissance</label>
+                        <input id="birthday" class="inputEntry" type="date" name="birthday"
+                            placeholder="Date de naissance">
+                    </li>
+
+                    <li>
+                        <label for="adress">Adresse</label>
+                        <input id="adress" class="inputEntry" type="text" name="adress" placeholder="Adresse">
+                    </li>
+
+                    <li>
+                        <label for="postalCode">Code postal</label>
+                        <input id="postalCode" class="inputEntry" type="text" name="postalCode"
+                            placeholder="Code postal">
+                    </li>
+
+                    <li>
+                        <label for="city">Ville</label>
+                        <input id="city" class="inputEntry" type="text" name="city" placeholder="Ville">
+                    </li>
+
+                    <li>
+                        <label for="secuNumber">Numéro Sécurité Sociale</label>
+                        <input id="secuNumber" class="inputEntry" type="number" name="secuNumber"
+                            placeholder="Numéro Sécurité Sociale">
+                    </li>
+
+                    <li>
+                        <label for="phoneNumber">Numéro de téléphone</label>
+                        <input id="phoneNumber" class="inputEntry" type="number" name="phoneNumber"
+                            placeholder="Numéro de téléphone">
+                    </li>
+
+                    <li>
+                        <label for="entryDate">Date d'entrée</label>
+                        <input id="entryDate" class="inputEntry" type="date" name="entryDate" required
+                            placeholder="Date d'entrée">
+                    </li>
+
+                    <li>
+                        <label for="exitDate">Date de sortie</label>
+                        <input id="exitDate" class="inputEntry" type="date" name="exitDate" required
+                            placeholder="Date de sortie">
+                    </li>
+
+                    <ul class="entryFormListTwo">
+                        <p>Type de chambre</p>
+                        <li>
+                            <input id="roomType" type="radio" name="roomType" value="Simple">
+                            <label for="roomType">Simple</label>
+                        </li>
+                        <li>
+                            <input id="roomType" type="radio" name="roomType" value="Double">
+                            <label for="roomType">Double</label>
+                        </li>
+                    </ul>
+
+                    <input id="availableRooms" type="button" value="Chambres disponibles">
+                    <input id="okBtn" type="submit" value="Valider">
+                </ul>
+
+            </form>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
