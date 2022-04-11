@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr ">
+
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Hopital La manu</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-------------------- Header ---------------------->
+        <header>
+            <div class="barreContainer">
+                <div class="barre">
+                    <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital" class="logo">
+                    <h1>Hopital La Manu</h1>
+
+                    <label for="recherche"></label>
+                    <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
+
+                    <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
+                </div>
+            </div>
+
+        </header>
+
+        <!-------------------- Tableau de bord ------------------>
+        <nav>
+            <div class="dashboard">
+                <p><img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
+                    <span id="name">Jean Dupont</span>
+                </p>
+                <p><a class="Déconnexion" href="index.html">Déconnexion</a></p>
+
+                <ul class="menu">
+                    <div class="borderList">
+                        <li><a href="accueil.html">Tableau de bord</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Prise de rendez vous</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Factures</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Entrée medecins</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Patients</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Médecins</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="#">Urgences</a></li>
+                    </div>
+
+                </ul>
+
+                <div class="emergency">
+                    <p>Urgences</p>
+                    <p>20min</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!---------------------- Body ----------------------------->
+        <section class="patient">
+
+            <form method="post" action="#" class="no_space">
+                <!--Bouton recherche patient-->
+                <label for="search_patient"></label>
+                <input type="search" id="search_patient" name="patient" placeholder="Nom du Medecin">
+                <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
+            </form>
+
+            <a href="#"><button id="add_patient">Ajouter Medecin</button></a>
+            <!--Bouton pour ajouter un patient-->
+
+
+            <article class="tab_patient">
+                <!--Tableau patient-->
+
+                <table class="table_patient">
+                    <caption></caption>
+                    <br><br>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Sexe</th>
+                            <th>Service</th>
+                            <th>Disponibilité</th>
+                            <!--Haut du tableau-->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Doctor</td>
+                            <td>Strange</td>
+                            <td>M</td>
+                            <td>kinesitherapeutes</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>Black</td>
+                            <td>Widow</td>
+                            <td>F</td>
+                           <td>Cardio</td>
+                           <td><span class="regler">Non</span></td>      <!--Corps du tableau-->
+                        </tr>
+                        <tr>
+                            <td>Wayne</td>
+                            <td>Bruce</td>
+                            <td>M</td>
+                            <td>Maternité</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>Parker</td>
+                            <td>Peter</td>
+                            <td>M</td>
+                            <td>anesthésie</td>
+                            <td><span class="regler">A régler</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Quinn</td>
+                            <td>Harley</td>
+                            <td>F</td>
+                            <td>Urgence</td>
+                            <td>oui</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="5"><br><br>Page 1/15</th>
+                            <!--Pied du tableau-->
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

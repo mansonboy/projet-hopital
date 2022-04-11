@@ -245,8 +245,8 @@ section article h2 {
 /* ----------------- BODY ENTREE PATIENT ---------------------- */
 #entryForm {
     background-color: white;
-    margin-left: 35%;
-    margin-right: 25%;
+    margin-left: 40%;
+    margin-right: 20%;
     position: relative;
     top: 10%;
     border-radius: 15px;
@@ -284,4 +284,31 @@ section article h2 {
 .inputEntry {
     float: right;
     margin-right: 30%;
+    padding-top: 1%;
+}
+
+/*--------------------------------- BODY URGENCES------------------------- */
+#entryEmergencyTitle {
+    text-align: center;
+    padding-top: 5%;
+}
+
+#entryEmergency {
+    background-color: white;
+    margin-left: 40%;
+    margin-right: 20%;
+    position: relative;
+    top: 1%;
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 78%;
+}
+
+#validBtn {
+    padding: 2% 8%;
+    border-radius: 30px;
+    background-color: #519df6;
+    margin-left: 35%;
+    position: relative;
+    bottom: 10%;
 }
