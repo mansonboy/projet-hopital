@@ -73,28 +73,81 @@
         <!---------------------- Body ----------------------------->
         <section class="patient">
 
-            <form method="post" action="#" class="no_space">        <!--Bouton recherche patient-->
+            <form method="post" action="#" class="no_space">
+                <!--Bouton recherche patient-->
                 <label for="search_patient"></label>
-                <input type="search" id="search_patient" name="patient" placeholder="Nom du patient"> 
+                <input type="search" id="search_patient" name="patient" placeholder="Nom du patient">
                 <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
             </form>
 
-            <a href="#" ><button id="add_patient">Ajouter patient</button></a>  <!--Bouton pour ajouter un patient-->
+            <a href="#"><button id="add_patient">Ajouter patient</button></a>
+            <!--Bouton pour ajouter un patient-->
+
 
             <article class="tab_patient">
-                
+                <!--Tableau patient-->
+
+                <table class="table_patient">
+                    <caption></caption>
+                    <br><br>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Sexe</th>
+                            <th>Facture</th>
+                            <th>Numero sécurité social</th>
+                            <!--Haut du tableau-->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Dupont</td>
+                            <td>Jean</td>
+                            <td>M</td>
+                            <td>Aucune</td>
+                            <td>1590560150250</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>Dos santos</td>
+                            <td>F</td>
+                            <td><span class="regler">A régler</span></td>
+                            <td>2590560150250</td>
+                            <!--Corps du tableau-->
+                        </tr>
+                        <tr>
+                            <td>Lefort</td>
+                            <td>Raymond</td>
+                            <td>M</td>
+                            <td>Aucune</td>
+                            <td>1590560150250</td>
+                        </tr>
+                        <tr>
+                            <td>Wagner-Diallo</td>
+                            <td>Dillo</td>
+                            <td>M</td>
+                            <td><span class="regler">A régler</span></td>
+                            <td>Aucun</td>
+                        </tr>
+                        <tr>
+                            <td>Parent</td>
+                            <td>Aurélie</td>
+                            <td>F</td>
+                            <td>A créer</td>
+                            <td>2590560150250</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>Page 1/15</th>
+                            <!--Pied du tableau-->
+                        </tr>
+                    </tfoot>
+                </table>
             </article>
-
-
-
-
-
-           
-            
-
-
-
-
         </section>
 
     </div>
