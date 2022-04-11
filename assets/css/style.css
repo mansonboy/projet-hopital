@@ -76,7 +76,7 @@ h1 {
 
   .menu ul {
     
-    font-size: 1.5;
+    font-size: 1.5em;
   }
 
   .menu li {
@@ -96,6 +96,7 @@ h1 {
      border-bottom: 1px solid white; 
      width: 80%;
      margin-left: 8%;
+     font-size: 0.9em;
   }
 
   #name {
@@ -112,3 +113,16 @@ h1 {
     color: white;
     font-size: 0.8em;
 }
+
+.emergency {
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    margin-left: 25%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+/* ------------------------Body  ---------------------------------*/
