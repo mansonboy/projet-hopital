@@ -38,7 +38,7 @@
 
                 <ul class="menu">
                     <div class="borderList">
-                        <li><a href="index.html">Tableau de bord</a></li>
+                        <li><a href="accueil.html">Tableau de bord</a></li>
                     </div>
                     <div class="borderList">
                         <li><a href="#">Prise de rendez vous</a></li>
@@ -71,53 +71,30 @@
         </nav>
 
         <!---------------------- Body ----------------------------->
-        <section class="accueil">
-            <a href="index.html">
-                <button type="submit" class="bubble">
-                    <p class="textBubble">Patients</p>
-                </button>
-            </a>
+        <section class="patient">
 
-            <a href="#">
-                <button type="submit" class="bubble">
-                    <p class="textBubble">Rendez-vous</p>
-                </button>
-            </a>
+            <form method="post" action="#" class="no_space">        <!--Bouton recherche patient-->
+                <label for="search_patient"></label>
+                <input type="search" id="search_patient" name="patient" placeholder="Nom du patient"> 
+                <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
+            </form>
 
-            <a href="#">
-                <button type="submit" class="bubble">
-                    <p class="textBubble">Médecins</p>
-                </button>
-            </a>
+            <a href="#" ><button id="add_patient">Ajouter patient</button></a>  <!--Bouton pour ajouter un patient-->
 
-            <article id="invoiceTable">
-                <h2 class="invoiceTitle">Envoie de facture</h2>
-
-                <ul>
-                    <a href="#">
-                        <li class="nameInvoice">Dupont Marie</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">Kim Taehung</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">César Jules</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">Rengoku Kyôjurô</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">D'Arc Jeanne</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">Morningstar Lucifer</li>
-                    </a>
-                    <a href="#">
-                        <li class="nameInvoice">Gomez Selena</li>
-                    </a>
-                </ul>
-
+            <article class="tab_patient">
+                
             </article>
+
+
+
+
+
+           
+            
+
+
+
+
         </section>
 
     </div>

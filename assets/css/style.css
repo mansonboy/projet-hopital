@@ -1,6 +1,10 @@
 * {
     margin: 0px;
 }
+body
+{
+    background-color: #DFDFDF;
+}
 
 .container {
     width: auto;
@@ -126,3 +130,36 @@ h1 {
 }
 
 /* ------------------------Body  ---------------------------------*/
+.no_space
+{
+    display: inline;
+}
+.patient
+{
+    width: 100%;
+    height: 100%;
+}
+#search_patient             /*Bouton recherche patient*/
+{
+    margin-left : 50px;
+    margin-top : 30px;
+    background-color: white;
+}
+#add_patient                /*Bouton ajout patient*/
+{
+    float:right;
+    margin-right: 50px ;
+    margin-top: 20px;
+    width:150px ;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+.tab_patient
+{
+    margin-left : 420px;
+    margin-top: 50px ;
+    width: 60%;
+    height: 50vh;
+    background-color: white;
+}
