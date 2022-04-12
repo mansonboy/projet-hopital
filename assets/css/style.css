@@ -314,14 +314,38 @@ section article h2 {
 }
 
 /* ------------------------Body calendar  ---------------------------------*/
-.form{
-    display: inline-flex;
-    position: relative;
-    top: 100px;
-    left: 20%;
-    font-size: 20px;
-
-}
+.pull-downMenu ul {
+    margin: 0;
+    padding: 0;
+    }
+    .pull-downMenu li {
+        list-style: none;
+        float: left;
+        position: relative;
+    }
+    .pull-downMenu ul li a {
+        color: #519df6;
+        text-decoration: none;
+        width: 200px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        border: 1px solid #519df6;
+        border-radius: 3px;
+        
+    }
+    .pull-downMenu ul ul {
+        position: absolute;
+        top: 31px;
+        visibility: hidden;
+    
+    }
+    .pull-downMenu ul li:hover ul {
+        visibility:visible 
+    }
+    .pull-downMenu li:hover {
+        background-color: aliceblue;
+    }
 .table {
     position: relative;
     top: 150px;
@@ -329,14 +353,15 @@ section article h2 {
     margin-left: 40%;    
 }
 
-table,
-td {
+.size,
+.size td {
     border: 1px solid #519df6; 
     border-radius: 6px;
+    
 }
 
-thead,
-tfoot {
+.thead,
+.tfoot {
     background-color: #519df6;
     color: #fff;
     border-radius: 6px;
