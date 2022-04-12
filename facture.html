@@ -71,16 +71,19 @@
         </nav>
 
         <!---------------------- Body ----------------------------->
+        
         <section class="accueil">
+            
             <form id="entryForm" action="traitement.php" method="post">
+                
                     <ul class="entryFormList">
-                    <li class="formList">
+                    <li class="formList ">
                         <label for="lastName">Nom</label>
                         <input id="lastName" class="inputEntry" type="text" name="lastName" required placeholder="Nom">
                     </li>
 
                     <li>
-                        <label for="firstName">Prénom</label>
+                        <label for="firstName" >Prénom</label>
                         <input id="firstName" class="inputEntry" type="text" name="firstName" required
                             placeholder="Prénom">
                     </li>
@@ -114,12 +117,6 @@
                     </li>
 
                     <li>
-                        <label for="phoneNumber">Numéro de téléphone</label>
-                        <input id="phoneNumber" class="inputEntry" type="number" name="phoneNumber"
-                            placeholder="Numéro de téléphone">
-                    </li>
-
-                    <li>
                         <label for="entryDate">Date d'entrée</label>
                         <input id="entryDate" class="inputEntry" type="date" name="entryDate" required
                             placeholder="Date d'entrée">
@@ -131,20 +128,37 @@
                             placeholder="Date de sortie">
                     </li>
 
+                    <li>
+                        <label for="honorary">Dépassement honoraire</label>
+                        <input id="honorary" class="inputEntry" type="number" name="honorary"
+                            placeholder="Montant">
+                    </li>
+
                     <ul class="entryFormListTwo">
-                        <p>Type de chambre</p>
-                        <li>
-                            <input id="roomType" type="radio" name="roomType" value="Simple">
-                            <label for="roomType">Simple</label>
-                        </li>
-                        <li>
-                            <input id="roomType" type="radio" name="roomType" value="Double">
-                            <label for="roomType">Double</label>
-                        </li>
+                        <p>Service</p>
+                        <select name="service">
+
+                            <optgroup label="type de chambre">
+                                <option value="simple">Simple</option>
+                                <option value="Double">Double</option>
+                             </optgroup>
+
+                             <optgroup label="Service à la carte">
+                                <option value="Tv">Tv</option>
+                                <option value="Internet">Internet</option>
+                                <option value="Telephone">Téléphone</option>
+                                <option value="Accompagnant">Accompagnant</option>
+                                <option value="Repas_accompagnant">Repas accompagnant</option>
+                             </optgroup>
+                            
+                        </select>
+                        <button>+</button>
                     </ul>
 
-                    <input id="availableRooms" type="button" value="Chambres disponibles">
-                    <input id="okBtn" type="submit" value="Valider">
+                    
+                    <input class="okBtn" type="submit" value="Imprimer">
+                    <input class="okBtn" type="submit" value="Envoyer par mail">
+
                 </ul>
 
             </form>

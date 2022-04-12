@@ -346,3 +346,18 @@ tfoot {
     font-size: 300%;
     margin-left : 50px;
 }
+
+/* --------------------------------------------------body facture ---------------------*/
+
+.inlign_li
+{
+    display : inline;
+}
+
+.okBtn {
+    padding: 2% 8%;
+    border-radius: 30px;
+    background-color: #519df6;
+    margin-top: 10%;
+    margin-left: 7%;
+}
