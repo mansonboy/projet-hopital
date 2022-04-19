@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr ">
+
+<head>
+    <meta charset="UTF-8" dir="ltr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Hopital La manu</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-------------------- Header ---------------------->
+        <header>
+            <div class="barreContainer">
+                <div class="barre">
+                    <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital" class="logo">
+                    <h1>Hopital La Manu</h1>
+
+                    <label for="recherche"></label>
+                    <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
+
+                    <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
+                </div>
+            </div>
+
+        </header>
+
+        <!-------------------- Tableau de bord ------------------>
+        <nav>
+            <div class="dashboard">
+                <p><img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
+                    <span id="name">Jean
+                        Dupont</span>
+                </p>
+                <p><a class="Déconnexion" href="index.html">Déconnexion</a></p>
+
+                <ul class="menu">
+                    <div class="borderList">
+                        <li><a href="accueil.html">Tableau de bord</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="rdv.html">Prise de rendez vous</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="facture.html">Factures</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="entree-patient.html">Entrée patients</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="patient.html">Patients</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="medecin.html">Médecins</a></li>
+                    </div>
+                    <div class="borderList">
+                        <li><a href="urgences.html">Urgences</a></li>
+                    </div>
+
+                </ul>
+
+                <div class="emergency">
+                    <p>Urgences</p>
+                    <p>20min</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!---------------------- Body ----------------------------->
+        <section class="accueil">
+            <a href="patient.html">
+                <button type="submit" class="bubble">
+                    <p class="textBubble">Patients</p>
+                </button>
+            </a>
+
+            <a href="rdv.html">
+                <button type="submit" class="bubble">
+                    <p class="textBubble">Rendez-vous</p>
+                </button>
+            </a>
+
+            <a href="medecin.html">
+                <button type="submit" class="bubble">
+                    <p class="textBubble">Médecins</p>
+                </button>
+            </a>
+
+            <article id="invoiceTable">
+                <h2 class="invoiceTitle">Envoie de facture</h2>
+
+                <ul>
+                    <a href="#">
+                        <li class="nameInvoice">Dupont Marie</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">Kim Taehung</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">César Jules</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">Rengoku Kyôjurô</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">D'Arc Jeanne</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">Morningstar Lucifer</li>
+                    </a>
+                    <a href="#">
+                        <li class="nameInvoice">Gomez Selena</li>
+                    </a>
+                </ul>
+
+            </article>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

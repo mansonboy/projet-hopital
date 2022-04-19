@@ -20,8 +20,7 @@ h1 {
 }
 
 .barreContainer {
-    float: right;
-    width: 80%;
+    
 }
 
 .barre {
@@ -61,14 +60,13 @@ h1 {
 
 .dashboard {
     background-color: #403b3b;
-    float: left;
-    width: 20%;
-    height: 100vh;
+    
 }
 
 .png_profil {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    float: left;
 }
 
 .menu {
@@ -100,19 +98,15 @@ h1 {
      border-bottom: 1px solid white; 
      width: 80%;
      margin-left: 8%;
-     font-size: 0.9em;
+     font-size: 0.8em;
   }
 
   #name {
       color: white;
-      position: relative;
-      bottom: 40px;
   }
 
   .Déconnexion{
-    position: relative;
-    left: 38%;
-    bottom: 40px;
+    
     text-decoration: underline;
     color: white;
     font-size: 0.8em;
@@ -125,8 +119,7 @@ h1 {
     text-align: center;
     width: 40%;
     margin-left: 25%;
-    padding: 10px;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 /* ------------------------Body patient   ---------------------------------*/
@@ -228,12 +221,10 @@ a {
 }
 
 #invoiceTable {
-    height: 50vh;
+   
     border: 1px solid black;
     border-radius: 10px;
-    margin-left: 30%;
-    margin-right: 10%;
-    margin-top: 5%;
+   
     background-color: white;
 }
 
