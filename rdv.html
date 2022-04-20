@@ -4,152 +4,170 @@
 <head>
     <meta charset="UTF-8" dir="ltr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Hopital La manu</title>
 </head>
 
 <body>
-    <div class="container">
+
+    <!-------------------- Tableau de bord ------------------>
+
+    <div class="row gx-0">
+        <div class="col-2">
+            <nav>
+                <div class="dashboard">
+                    <img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
+                       <p class="text-center"><span id="name"><br>Jean
+                            Dupont </span>
+                            <a class="Déconnexion" href="index.html">Déconnexion</a><br>
+                    </p>
+
+
+                    <ul class="menu">
+                        <div class="borderList">
+                            <li><a href="accueil.html"><br>Tableau de bord</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="rdv.html">Prise de rendez vous</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="facture.html">Factures</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="entree-patient.html">Entrée patients</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="patient.html">Patients</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="medecin.html">Médecins</a></li>
+                        </div>
+                        <div class="borderList">
+                            <li><a href="urgences.html">Urgences</a></li>
+                        </div>
+
+                    </ul>
+
+                    <div class="emergency">
+                        <p>Urgences</p>
+                        <p>20min</p>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
 
         <!-------------------- Header ---------------------->
-        <header>
-            <div class="barreContainer">
-                <div class="barre">
-                    <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital" class="logo">
-                    <h1>Hopital La Manu</h1>
+        <div class="col-10">
+            <header>
+                <div class="barreContainer">
+                    <div class="barre">
+                        <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital"
+                            class="logo">
+                        <h1>Hopital La Manu</h1>
 
-                    <label for="recherche"></label>
-                    <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
+                        <label for="recherche"></label>
+                        <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
 
-                    <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
-                </div>
-            </div>
-
-        </header>
-
-        <!-------------------- Tableau de bord ------------------>
-        <nav>
-            <div class="dashboard">
-                <p><img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
-                    <span id="name">Jean
-                        Dupont</span>
-                </p>
-                <p><a class="Déconnexion" href="index.html">Déconnexion</a></p>
-
-                <ul class="menu">
-                    <div class="borderList">
-                        <li><a href="accueil.html">Tableau de bord</a></li>
+                        <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
                     </div>
-                    <div class="borderList">
-                        <li><a href="rdv.html">Prise de rendez vous</a></li>
-                    </div>
-                    <div class="borderList">
-                        <li><a href="facture.html">Factures</a></li>
-                    </div>
-                    <div class="borderList">
-                        <li><a href="entree-patient.html">Entrée patients</a></li>
-                    </div>
-                    <div class="borderList">
-                        <li><a href="patient.html">Patients</a></li>
-                    </div>
-                    <div class="borderList">
-                        <li><a href="medecin.html">Médecins</a></li>
-                    </div>
-                    <div class="borderList">
-                        <li><a href="urgences.html">Urgences</a></li>
-                    </div>
-
-                </ul>
-
-                <div class="emergency">
-                    <p>Urgences</p>
-                    <p>20min</p>
                 </div>
 
-            </div>
+            </header>
+        
 
-        </nav>
 
-        <!---------------------- Body calandar ----------------------------->
-        <div class="pull-downMenu">
-            <nav>
-                <ul>
-                  <li><a href="#">Services</a>
+        <!---------------------- Body ----------------------------->
+        <div class="col-8">
+            <div class="pull-downMenu">
+                <nav>
                     <ul>
-                      <li><a href="#">Urgences</a></li>
-                      <li><a href="#">Maternité</a></li>
-                      <li><a href="#">Radiologie</a></li>
-                      <li><a href="#">Cardiologie</a></li>
-                      <li><a href="#">Chirurgie</a></li>
-                      <li><a href="#">Pédiatrie</a></li>
+                      <li><a href="#">Services</a>
+                        <ul>
+                          <li><a href="#">Urgences</a></li>
+                          <li><a href="#">Maternité</a></li>
+                          <li><a href="#">Radiologie</a></li>
+                          <li><a href="#">Cardiologie</a></li>
+                          <li><a href="#">Chirurgie</a></li>
+                          <li><a href="#">Pédiatrie</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="#">Practiciens</a>
+                        <ul>
+                          <li><a href="#">Gerard Le Pire</a></li>
+                          <li><a href="#">Benjamin Scifiski</a></li>
+                          <li><a href="#">Réne Le Manche</a></li>
+                          <li><a href="#">Morad El Majid</a></li>
+                          <li><a href="#">Martin Bonfils</a></li>
+                          <li><a href="#">Rachid Alioui</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </li>
-                  <li> <a href="#">Practiciens</a>
-                    <ul>
-                      <li><a href="#">Gerard Le Pire</a></li>
-                      <li><a href="#">Benjamin Scifiski</a></li>
-                      <li><a href="#">Réne Le Manche</a></li>
-                      <li><a href="#">Morad El Majid</a></li>
-                      <li><a href="#">Martin Bonfils</a></li>
-                      <li><a href="#">Rachid Alioui</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>  
-              </nav>
-
-    <div class="table"> 
-            <table class="size">
-            
-                <thead>
-                    <tr>
-                        <th colspan="7">Avril</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr><td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>    
-
-                </tbody>
-                <tfoot> <td>29</td>
-                        <td>30</td>
-                </tfoot>
-            </table>
-    </div>        
+                  </div>  
+                  </nav>
+                  
+        <div class="table"> 
+                <table class="size">
+                
+                    <thead>
+                        <tr>
+                            <th colspan="7">Avril</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr><td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>    
     
+                    </tbody>
+                    <tfoot> <td>29</td>
+                            <td>30</td>
+                    </tfoot>
+                </table>
+        </div>        
+        </div>
+    </div>
+    </div></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
