@@ -236,45 +236,26 @@ section article h2 {
 /* ----------------- BODY ENTREE PATIENT ---------------------- */
 #entryForm {
     background-color: white;
-    margin-left: 40%;
-    margin-right: 20%;
-    position: relative;
-    top: 10%;
+   
     border-radius: 15px;
     border: 1px solid black;
 }
-
 #availableRooms {
     position: relative;
     left: 50%;
     bottom: 100px;
 }
-
 #okBtn {
     padding: 2% 8%;
     border-radius: 30px;
     background-color: #519df6;
     margin-top: 10%;
 }
-
 .entryFormList {
     list-style: none;
-    padding-top: 8%;
-    padding-bottom: 10%;
 }
-
-.entryFormList li {
-    padding: 1%;
-}
-
 .entryFormListTwo {
     list-style: none;
-    padding-top: 1%;
-}
-
-.inputEntry {
-    float: right;
-    margin-right: 30%;
     padding-top: 1%;
 }
 
