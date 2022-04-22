@@ -60,7 +60,7 @@ h1 {
 
 .dashboard {
     background-color: #403b3b;
-    height: 100vh;
+   
 }
 
 .png_profil {
@@ -121,7 +121,13 @@ h1 {
     margin-left: 25%;
     margin-top: 13px;
 }
+.line 
+{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
 
+}
 /* ------------------------Body patient   ---------------------------------*/
 .no_space
 {
