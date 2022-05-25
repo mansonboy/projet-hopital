@@ -98,27 +98,24 @@
 
                 <!---------------------- Body ----------------------------->
 
-                <div class="row">
-                    <div class="offset-2 col-4 ">
-                        <form method="post" action="#" class="no_space">
-                            <!--Bouton recherche patient-->
-                            <label for="search_patient"></label>
-                            <input type="search" id="search_patient" name="patient" placeholder="Nom du patient">
-                            <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
-                        </form>
-                    </div>
 
-                    <div class="offset-3 col-2 pb-5">
-                        <a href="entree-patient.html"><button id="add_patient">Ajouter patient</button></a>
+
+
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-4 ms-3 my-3">
+                        <input class="form-control" type="search" name="patient" placeholder="Nom du patient">
+                    </div>
+                    <div class="col-12 col-md-4 my-3 ms-3">
+                        <a href="entree-patient.html" class="btn btn-primary">Ajouter patient</a>
                     </div>
                 </div>
 
 
-                <div class="row add_patient_border ">
+                <div class="row add_patient_border">
                     <h4 class="text-center mt-3">Ajouter un antécédent</h4>
                     <div class="row">
 
-                        <div class=" col-2">
+                        <div class=" col-12 col-md-2">
 
                             <div class="input-group mt-4">
                                 <input id="nom" type="text" class="form-control" placeholder="Nom"
@@ -131,7 +128,7 @@
                             </div>
                         </div>
 
-                        <div class="col-2">
+                        <div class="col-12 col-md-2">
                             <div class="col-12">
                                 <select id="liste_evenement" class="mt-4 ms-4" aria-label="Default select example">
                                     <option selected>type d’évènement</option>
@@ -144,26 +141,27 @@
                             </div>
                             <div class="col-12">
                                 <label for="dateAnt" class="form-label"></label>
-                                <input type="date" class="form-control ms-4" id="dateAnt" placeholder=""
+                                <input type="date" class="form-control ms-md-4" id="dateAnt" placeholder=""
                                     value="2022-04-01" min="2018-01-01" max="2050-12-31" required>
                             </div>
                         </div>
 
 
-                        <div class="form-floating col-5 mt-3 ms-5">
+                        <div class="form-floating col-12 col-md-5 mt-3 ms-md-5">
                             <div class="col-12">
                                 <textarea class="form-control mb-3" placeholder="Description de l'antécédent"
                                     id="descriptionAnt"></textarea>
                             </div>
 
                             <div class="row">
-                                <div class="col-6 pb-2">
+                                <div class="col-12 col-md-6 pb-2">
                                     <input id="sexe" type="text" class="form-control" placeholder="Sexe"
                                         aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 </div>
-                                <div class="col-6">
-                                    <input id="number_sociale" type="text" class="form-control" placeholder="Numero securite sociale"
-                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="col-12 col-md-6">
+                                    <input id="number_sociale" type="text" class="form-control"
+                                        placeholder="Numero securite sociale" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
                                 </div>
                             </div>
                         </div>
@@ -177,7 +175,7 @@
 
 
                 <div class="row">
-                    <div class="offset-2-md col-12 mt-3 ms-2">
+                    <div class="col-12 mt-3 ms-2">
                         <table class="table table-light table-striped">
                             <thead>
                                 <tr>

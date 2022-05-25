@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/form-validation.css" />
     <title>Hopital La manu</title>
 </head>
 
@@ -14,56 +15,71 @@
 
     <!-------------------- Tableau de bord ------------------>
 
-    <div class="row gx-0">
-        <div class="col-2">
-            <nav>
-                <div class="dashboard">
-                    <img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
-                       <p class="text-center"><span id="name"><br>Jean
-                            Dupont </span>
-                            <a class="Déconnexion" href="index.html">Déconnexion</a><br>
-                    </p>
+    <!-------------------- Tableau de bord ------------------>
 
+    <div class="container-fluid g-0">
+        <div class="row d-flex g-0">
+            <div class="col-11 col-md-3 ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center dashboard h-100 ">
 
-                    <ul class="menu">
-                        <div class="borderList">
-                            <li><a href="accueil.html"><br>Tableau de bord</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="rdv.html">Prise de rendez vous</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="facture.html">Factures</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="entree-patient.html">Entrée patients</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="patient.html">Patients</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="medecin.html">Médecins</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="urgences.html">Urgences</a></li>
-                        </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    </ul>
-
-                    <div class="emergency">
-                        <p>Urgences</p>
-                        <p>20min</p>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav flex-column mx-auto fs-4 ">
+                            <li class="nav-item ">
+                                <img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil"
+                                    class="png_profil">
+                                <p class="text-center"><span id="name"><br>Jean
+                                        Dupont </span>
+                                    <a class="Déconnexion" href="index.html">Déconnexion</a><br>
+                                </p>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-white " aria-current="page" href="accueil.html">Tableau
+                                    de bord</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="rdv.html">Prise de rendez vous</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="facture.html">Factures</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="entree-patient.html">Entrée patients</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="patient.html">Patients</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="medecin.html">Médecins</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="urgences.html">Urgences</a>
+                            </li>
+                            <div class="line mx-auto my-2"></div>
+                            <li class="nav-item mt-2">
+                                <span class="badge badge-danger bg-danger p-2">Urgences <br> 17 min</span>
+                            </li>
+                        </ul>
                     </div>
+                </nav>
 
-                </div>
-
-            </nav>
-        </div>
+            </div>
 
 
         <!-------------------- Header ---------------------->
-        <div class="col-10">
-            <header>
+        <div class="col-9">
+            <header class="d-none d-sm-block d-md-block  ">
                 <div class="barreContainer">
                     <div class="barre">
                         <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital"
@@ -82,73 +98,85 @@
 
 
         <!---------------------- Body ----------------------------->
-        <div class="offset-2 col-8 ">
-            <section class="accueil">
-                <h2 id="entryEmergencyTitle" class="text-center mt-2">Entrée aux urgences</h2>
+        <div class="col-md-9 col-lg-10 mt-2 ms-5">
+            <div class="contenue">
+            <h4 class="mb-3">Urgences</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
     
-                <form id="entryEmergency" action="traitement.php" method="post">
-                    <ul class="entryFormList">
-                        <li class="formList mt-1">
-                            <label for="lastName">Nom</label>
-                            <input id="lastName" class="inputEntry" type="text" name="lastName" required placeholder="Nom">
-                        </li>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="firstName">Prénom</label>
-                            <input id="firstName" class="inputEntry" type="text" name="firstName" required
-                                placeholder="Prénom">
-                        </li>
+                <div class="col-sm-2">
+                  <label for="birthday" class="form-label">Date de naissance</label>
+                  <div class="input-group has-validation">
+                    <input id="birthday" class="inputEntry" type="date" name="birthday"
+                     placeholder="Date de naissance">
+                  </div>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="birthday">Date de naissance</label>
-                            <input id="birthday" class="inputEntry" type="date" name="birthday"
-                                placeholder="Date de naissance">
-                        </li>
+                <div class="col-sm-10">
+                  <label for="phoneNumber" class="form-label">Telephone <span class="text-muted">(Optionnel)</span></label>
+                  <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="0612345678">
+                  <div class="invalid-feedback">
+                    Veuillez entrer un bon numero de telephone.
+                  </div>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="adress">Adresse</label>
-                            <input id="adress" class="inputEntry" type="text" name="adress" placeholder="Adresse">
-                        </li>
+                <div class="col-12">
+                  <label for="address" class="form-label">Addresse</label>
+                  <input type="text" class="form-control" id="address" placeholder="123 rue Victor Hugo" required>
+                  <div class="invalid-feedback">
+                    Veuillez entrer une bonne adresse.
+                  </div>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="postalCode">Code postal</label>
-                            <input id="postalCode" class="inputEntry" type="text" name="postalCode"
-                                placeholder="Code postal">
-                        </li>
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Pays</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Choisir...</option>
+                    <option>France</option>
+                  </select>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="city">Ville</label>
-                            <input id="city" class="inputEntry" type="text" name="city" placeholder="Ville">
-                        </li>
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Département / Région</label>
+                  <select class="form-select" id="state" required>
+                    <option value="">Choisir...</option>
+                    <option>Oise</option>
+                  </select>
+                </div>
     
-                        <li class="mt-1">
-                            <label for="secuNumber">Numéro Sécurité Sociale</label>
-                            <input id="secuNumber" class="inputEntry" type="number" name="secuNumber"
-                                placeholder="Numéro Sécurité Sociale">
-                        </li>
-    
-                        <li class="mt-1">
-                            <label for="phoneNumber">Numéro de téléphone</label>
-                            <input id="phoneNumber" class="inputEntry" type="number" name="phoneNumber"
-                                placeholder="Numéro de téléphone">
-                        </li>
-    
-                        <li class="mt-1">
-                            <label for="symptomPatient">Symptômes du patient</label>
-                            <textarea name="symptomPatient" id="symptomPatient" cols="60"
-                                rows="7">Symptômes du patient</textarea>
-                        </li>
-                    </ul>
-                    </ul>
-                    <input id="validBtn" type="submit" value="Valider" class="ms-5">
-                    
-    
-    
-                </form>
-            </section>
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Code Postale</label>
+                  <input type="text" class="form-control" id="zip" placeholder="75000" required>
+                  <div class="invalid-feedback">
+                    Veuillez mettre un code postal valide
+                  </div>
+                </div>
+                <div class="col-12-md-3">
+                    <label for="symptomPatient" class="form-label">Symptomes</label>
+                  <textarea type="text" class="form-control" id="symptomPatient" placeholder="" value="" required></textarea>
+                  <hr class="my-4">
+
+                  <button class="w-100 btn btn-primary btn-lg" type="submit">Valider</button>
+                </li>
+            </div>
+            </div>
         </div>
-    </div>
-    </div></div>
+              <script src="form-validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

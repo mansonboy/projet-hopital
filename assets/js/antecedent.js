@@ -18,7 +18,7 @@ function displayTab() {
     tabAnt.forEach((element) => {
         let newLine =
             `<tr>
-                <td>${element[0]}</td>
+            <th scope="row">${element[0]}</th>
                 <td>${element[1]}</td>
                 <td>${element[2]}</td>
                 <td>${element[3]}</td>

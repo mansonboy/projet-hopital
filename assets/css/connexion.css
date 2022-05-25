@@ -18,3 +18,7 @@
 .connexionBox {
     border-radius: 10px;
 }
+/* --------------------------------MEDIA QUERIES---------------------- */
+@media all and (max-width: 768px) {
+    #backGround {background-image: none; background-color: #90BCE3;}
+}
