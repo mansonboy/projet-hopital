@@ -176,6 +176,10 @@ h1 {
     font-weight: bold;
 }
 
+.add_patient_border
+{
+    border : solid 5px black;
+}
 
 /* ------------------------Body tableau de bord  ---------------------------------*/
 a {
@@ -315,12 +319,7 @@ section article h2 {
     .pull-downMenu li:hover {
         background-color: aliceblue;
     }
-.table {
-    position: relative;
-    top: 150px;
-    border-radius: 6px;
-    margin-left: 40%;    
-}
+
 .size,
 .size td {
     border: 1px solid #519df6; 

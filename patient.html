@@ -14,159 +14,197 @@
 
     <!-------------------- Tableau de bord ------------------>
 
-    <div class="row gx-0">
-        <div class="col-2">
-            <nav>
-                <div class="dashboard">
-                    <img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil" class="png_profil">
-                       <p class="text-center"><span id="name"><br>Jean
-                            Dupont </span>
-                            <a class="Déconnexion" href="index.html">Déconnexion</a><br>
-                    </p>
+    <div class="container-fluid g-0">
+        <div class="row g-0">
+            <div class="col-11 col-md-3 ">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center dashboard h-100 ">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav flex-column mx-auto fs-4 ">
+                            <li class="nav-item ">
+                                <img src="assets/img/profil.png" alt="photo de profil" tittle="Votre profil"
+                                    class="png_profil">
+                                <p class="text-center"><span id="name"><br>Jean
+                                        Dupont </span>
+                                    <a class="Déconnexion" href="index.html">Déconnexion</a><br>
+                                </p>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-white " aria-current="page" href="accueil.html">Tableau
+                                    de bord</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="rdv.html">Prise de rendez vous</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="facture.html">Factures</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="entree-patient.html">Entrée patients</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="patient.html">Patients</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="medecin.html">Médecins</a>
+                            </li>
+                            <div class="line mx-auto"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="urgences.html">Urgences</a>
+                            </li>
+                            <div class="line mx-auto my-2"></div>
+                            <li class="nav-item mt-2">
+                                <span class="badge badge-danger bg-danger p-2">Urgences <br> 17 min</span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
 
 
-                    <ul class="menu">
-                        <div class="borderList">
-                            <li><a href="accueil.html"><br>Tableau de bord</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="rdv.html">Prise de rendez vous</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="facture.html">Factures</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="entree-patient.html">Entrée patients</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="patient.html">Patients</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="medecin.html">Médecins</a></li>
-                        </div>
-                        <div class="borderList">
-                            <li><a href="urgences.html">Urgences</a></li>
-                        </div>
 
-                    </ul>
+            <!-------------------- Header ---------------------->
+            <div class="col-9">
+                <header class="d-none d-sm-block d-md-block  ">
+                    <div class="barreContainer">
+                        <div class="barre">
+                            <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital"
+                                class="logo">
+                            <h1>Hopital La Manu</h1>
 
-                    <div class="emergency">
-                        <p>Urgences</p>
-                        <p>20min</p>
+                            <label for="recherche"></label>
+                            <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
+
+                            <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
+                        </div>
                     </div>
 
-                </div>
-
-            </nav>
-        </div>
+                </header>
 
 
-        <!-------------------- Header ---------------------->
-        <div class="col-10">
-            <header>
-                <div class="barreContainer">
-                    <div class="barre">
-                        <img src="assets/img/logo.png" alt="logo hopital" title="Bienvenue sur notre hopital"
-                            class="logo">
-                        <h1>Hopital La Manu</h1>
 
-                        <label for="recherche"></label>
-                        <input class="recherche" type="text" name="recherche" placeholder="Recherche..." />
 
-                        <img src="assets/img/loupe.png" alt="loupe" title="recherche" class="logo_recherche">
+                <!---------------------- Body ----------------------------->
+
+                <div class="row">
+                    <div class="offset-2 col-4 ">
+                        <form method="post" action="#" class="no_space">
+                            <!--Bouton recherche patient-->
+                            <label for="search_patient"></label>
+                            <input type="search" id="search_patient" name="patient" placeholder="Nom du patient">
+                            <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
+                        </form>
+                    </div>
+
+                    <div class="offset-3 col-2 pb-5">
+                        <a href="entree-patient.html"><button id="add_patient">Ajouter patient</button></a>
                     </div>
                 </div>
 
-            </header>
-        
+
+                <div class="row add_patient_border ">
+                    <h4 class="text-center mt-3">Ajouter un antécédent</h4>
+                    <div class="row">
+
+                        <div class=" col-2">
+
+                            <div class="input-group mt-4">
+                                <input id="nom" type="text" class="form-control" placeholder="Nom"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                            </div>
+                            <div class="input-group mt-3">
+                                <input id="prenom" type="text" class="form-control" placeholder="prénom"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="col-12">
+                                <select id="liste_evenement" class="mt-4 ms-4" aria-label="Default select example">
+                                    <option selected>type d’évènement</option>
+                                    <option value="1">Accouchement</option>
+                                    <option value="2">Opération</option>
+                                    <option value="3">Accident</option>
+                                    <option value="4">Maladie</option>
+                                    <option value="5">Traitement</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="dateAnt" class="form-label"></label>
+                                <input type="date" class="form-control ms-4" id="dateAnt" placeholder=""
+                                    value="2022-04-01" min="2018-01-01" max="2050-12-31" required>
+                            </div>
+                        </div>
 
 
-        <!---------------------- Body ----------------------------->
-        <div class="offset-2 col-8">
-            <section class="patient">
+                        <div class="form-floating col-5 mt-3 ms-5">
+                            <div class="col-12">
+                                <textarea class="form-control mb-3" placeholder="Description de l'antécédent"
+                                    id="descriptionAnt"></textarea>
+                            </div>
 
-                <form method="post" action="#" class="no_space">
-                    <!--Bouton recherche patient-->
-                    <label for="search_patient"></label>
-                    <input type="search" id="search_patient" name="patient" placeholder="Nom du patient">
-                    <a href="#"><img src="assets/img/loupe1.png" alt="loupe" title="recherche"></a>
-                </form>
-    
-                <a href="entree-patient.html"><button id="add_patient">Ajouter patient</button></a>
-                <!--Bouton pour ajouter un patient-->
-    
-    
-                <article class="tab_patient mt-2">
-                    <!--Tableau patient-->
-    
-                    <table class="table_patient">
-                        <caption></caption>
-                        <br><br>
-                        <thead>
-                            <tr>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Sexe</th>
-                                <th>Facture</th>
-                                <th>Numero sécurité social</th>
-                                <!--Haut du tableau-->
-                            </tr>
-                        </thead>
-    
-                        <tbody>
-                            <tr>
-                                <td>Dupont</td>
-                                <td>Jean</td>
-                                <td>M</td>
-                                <td>Aucune</td>
-                                <td>1590560150250</td>
-                            </tr>
-                            <tr>
-                                <td>Maria</td>
-                                <td>Dos santos</td>
-                                <td>F</td>
-                                <td><span class="regler">A régler</span></td>
-                                <td>2590560150250</td>
-                                <!--Corps du tableau-->
-                            </tr>
-                            <tr>
-                                <td>Lefort</td>
-                                <td>Raymond</td>
-                                <td>M</td>
-                                <td>Aucune</td>
-                                <td>1590560150250</td>
-                            </tr>
-                            <tr>
-                                <td>Wagner-Diallo</td>
-                                <td>Dillo</td>
-                                <td>M</td>
-                                <td><span class="regler">A régler</span></td>
-                                <td>Aucun</td>
-                            </tr>
-                            <tr>
-                                <td>Parent</td>
-                                <td>Aurélie</td>
-                                <td>F</td>
-                                <td>A créer</td>
-                                <td>2590560150250</td>
-                            </tr>
-                        </tbody>
-    
-                        <tfoot>
-                            <tr>
-                                <th colspan="5"><br><br>Page 1/15</th>
-                                <!--Pied du tableau-->
-                            </tr>
-                        </tfoot>
-                    </table>
-                </article>
-            </section>
+                            <div class="row">
+                                <div class="col-6 pb-2">
+                                    <input id="sexe" type="text" class="form-control" placeholder="Sexe"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                                <div class="col-6">
+                                    <input id="number_sociale" type="text" class="form-control" placeholder="Numero securite sociale"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 mt-5 text-center ms-5">
+                            <button id="validate" class="btn btn-primary" type="submit">Valider</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="offset-2-md col-12 mt-3 ms-2">
+                        <table class="table table-light table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Prenom</th>
+                                    <th scope="col">Sexe</th>
+                                    <th scope="col">Numero sécurité sociale</th>
+                                    <th scope="col"> type évenement</th>
+                                    <th scope="col"> Antécédents médicaux</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabBody">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    </div></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="assets/js/antecedent.js"></script>
 
 </body>
 
